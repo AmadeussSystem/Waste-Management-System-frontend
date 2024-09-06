@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import { FourthPage } from "@/components/fourth-page";
 import { LandingPage } from "@/components/landing-page";
 import { SecondPage } from "@/components/second-page";
@@ -11,8 +10,7 @@ const page = () => {
       <LandingPage />
       <SecondPage />
       <ThirdPage />
-      <FourthPage />
-      <Footer />
+      <FourthPage
     </div>
   );
 };
