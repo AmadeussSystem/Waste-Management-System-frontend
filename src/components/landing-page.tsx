@@ -3,6 +3,7 @@
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import MySvg from "../public/logo.svg";
 import {
   NavigationMenu,
   NavigationMenuList,
@@ -70,7 +71,7 @@ export function LandingPage() {
             <NavigationMenuLink asChild>
               <Link
                 href="#"
-                className="group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-['Roboto', 'sans-serif'] font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                className="group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-['Roboto', 'sans-serif'] font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
                 prefetch={false}
               >
                 Home
@@ -83,7 +84,7 @@ export function LandingPage() {
                   <NavigationMenuLink asChild>
                     <Link
                       href="#"
-                      className="group grid h-auto w-full items-center justify-start gap-1 rounded-md p-4 text-sm font-['Roboto', 'sans-serif'] font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                      className="group grid h-auto w-full items-center justify-start gap-1 rounded-md p-4 text-sm font-['Roboto', 'sans-serif'] font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
                       prefetch={false}
                     >
                       <div className="text-sm font-medium leading-none group-hover:underline">
@@ -97,7 +98,7 @@ export function LandingPage() {
                   <NavigationMenuLink asChild>
                     <Link
                       href="#"
-                      className="group grid h-auto w-full items-center justify-start gap-1 rounded-md p-4 text-sm font-['Roboto', 'sans-serif'] font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                      className="group grid h-auto w-full items-center justify-start gap-1 rounded-md p-4 text-sm font-['Roboto', 'sans-serif'] font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
                       prefetch={false}
                     >
                       <div className="text-sm font-medium leading-none group-hover:underline">
@@ -111,7 +112,7 @@ export function LandingPage() {
                   <NavigationMenuLink asChild>
                     <Link
                       href="#"
-                      className="group grid h-auto w-full items-center justify-start gap-1 rounded-md p-4 text-sm font-['Roboto', 'sans-serif'] font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                      className="group grid h-auto w-full items-center justify-start gap-1 rounded-md p-4 text-sm font-['Roboto', 'sans-serif'] font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
                       prefetch={false}
                     >
                       <div className="text-sm font-medium leading-none group-hover:underline">
@@ -128,7 +129,7 @@ export function LandingPage() {
             <NavigationMenuLink asChild>
               <Link
                 href="#"
-                className="group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-['Roboto', 'sans-serif'] font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                className="group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-['Roboto', 'sans-serif'] font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
                 prefetch={false}
               >
                 About
@@ -137,7 +138,7 @@ export function LandingPage() {
             <NavigationMenuLink asChild>
               <Link
                 href="#"
-                className="group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-['Roboto', 'sans-serif'] font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                className="group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-['Roboto', 'sans-serif'] font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50"
                 prefetch={false}
               >
                 Contact
@@ -178,27 +179,21 @@ export function LandingPage() {
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link
                   href="#"
-                  className="inline-flex h-10 items-center justify-center rounded-md bg-[#4CAF50] px-8 text-sm font-['Roboto', 'sans-serif'] font-medium text-white shadow transition-colors hover:bg-[#4CAF50]/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                  className="inline-flex h-10 items-center justify-center rounded-md bg-[#4CAF50] px-8 text-sm font-['Roboto', 'sans-serif'] font-medium text-white transition-colors hover:bg-[#45A049] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                   prefetch={false}
                 >
-                  Get a Quote
+                  Get Started
                 </Link>
                 <Link
                   href="#"
-                  className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-['Roboto', 'sans-serif'] font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                  className="inline-flex h-10 items-center justify-center rounded-md border border-white px-8 text-sm font-['Roboto', 'sans-serif'] font-medium text-white transition-colors hover:bg-white hover:text-[#4CAF50] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                   prefetch={false}
                 >
                   Learn More
                 </Link>
               </div>
             </div>
-            <img
-              src="/placeholder.svg"
-              width="550"
-              height="550"
-              alt="Hero"
-              className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
-            />
+            <MySvg width={500} height={500} />
           </div>
         </div>
       </section>
@@ -206,44 +201,36 @@ export function LandingPage() {
   );
 }
 
-function MenuIcon(props: IconProps) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
+const MenuIcon: React.FC<IconProps> = (props) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M3 6h18M3 12h18M3 18h18"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
-    >
-      <line x1="4" x2="20" y1="12" y2="12" />
-      <line x1="4" x2="20" y1="6" y2="6" />
-      <line x1="4" x2="20" y1="18" y2="18" />
-    </svg>
-  );
-}
+    />
+  </svg>
+);
 
-function TrashIcon(props: IconProps) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
+const TrashIcon: React.FC<IconProps> = (props) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M3 6h18M3 6h18M3 6h18M3 6h18M3 6h18"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
-    >
-      <path d="M3 6h18" />
-      <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
-      <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
-    </svg>
-  );
-}
+    />
+  </svg>
+);
