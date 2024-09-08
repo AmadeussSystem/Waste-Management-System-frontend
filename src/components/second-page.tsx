@@ -63,7 +63,7 @@ export function SecondPage() {
     <div className={`${ibm_plex_sans.className} bg-white text-black`}>
       {/* Hero Section */}
       <section className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           {/* Grid layout with proper alignment */}
           <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-[1fr_550px]">
             <div className="space-y-4 text-center lg:text-left">
@@ -88,11 +88,13 @@ export function SecondPage() {
                 Learn More
               </Link>
             </div>
-            <OurJourney
-              width="100%" // Set width to 100% for responsiveness
-              height="auto" // Set height to auto to maintain aspect ratio
-              className="mx-auto md:w-full"
-            />
+            <div className="flex justify-center">
+              <OurJourney
+                width="100%" // Set width to 100% for responsiveness
+                height="auto" // Set height to auto to maintain aspect ratio
+                className="mx-auto md:w-full"
+              />
+            </div>
           </div>
         </div>
       </section>
