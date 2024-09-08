@@ -44,11 +44,20 @@ export function FourthPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="space-y-2">
               <Label htmlFor="name">Name</Label>
-              <Input id="name" placeholder="Enter your name" />
+              <Input
+                id="name"
+                placeholder="Enter your name"
+                className="text-black" // Set text color to black
+              />
             </div>
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
-              <Input id="email" type="email" placeholder="Enter your email" />
+              <Input
+                id="email"
+                type="email"
+                placeholder="Enter your email"
+                className="text-black" // Set text color to black
+              />
             </div>
           </div>
           <div className="space-y-2">
@@ -57,6 +66,7 @@ export function FourthPage() {
               id="phone"
               type="tel"
               placeholder="Enter your phone number"
+              className="text-black" // Set text color to black
             />
           </div>
           <div className="space-y-2">
@@ -64,7 +74,7 @@ export function FourthPage() {
             <Textarea
               id="message"
               placeholder="Enter your message"
-              className="min-h-[150px]"
+              className="min-h-[150px] text-black" // Set text color to black
             />
           </div>
           <div className="flex justify-center">
