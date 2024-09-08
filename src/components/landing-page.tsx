@@ -3,7 +3,7 @@
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import MySvg from "../public/logo.svg"; // Importing your SVG logo
+import MySvg from "../../public/logo.svg"; // Importing your SVG logo
 import {
   NavigationMenu,
   NavigationMenuList,
