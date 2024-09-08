@@ -154,7 +154,7 @@ export function LandingPage() {
           </Link>
           <Link
             href="#"
-            className="inline-flex h-10 items-center justify-center rounded-md bg-secondary px-4 text-sm font-medium transition-colors hover:bg-secondary/90"
+            className="inline-flex h-10 items-center justify-center rounded-md bg-secondary px-4 text-sm font-medium text-black transition-colors hover:bg-secondary/90"
             prefetch={false}
           >
             Sign Up
