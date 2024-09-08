@@ -59,7 +59,7 @@ export function SecondPage() {
           {/* Grid layout with proper alignment */}
           <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-[1fr_550px]">
             <div className="space-y-4 text-center lg:text-left">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter text-black">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-black">
                 Our Journey & Inspiration
               </h1>
               <p className="max-w-[600px] mx-auto text-gray-700 text-base sm:text-lg md:text-xl lg:text-xl">
@@ -89,7 +89,7 @@ export function SecondPage() {
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center space-y-4">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tighter text-black">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-tighter text-black">
               Milestones & Inspirations
             </h2>
             <p className="max-w-[700px] mx-auto text-gray-700 text-base sm:text-lg md:text-xl">
