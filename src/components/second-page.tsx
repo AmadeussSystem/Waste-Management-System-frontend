@@ -2,6 +2,7 @@ import { IBM_Plex_Sans } from "next/font/google";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
+import OurJourney from "../../public/OurJourneyv2.svg";
 
 // Import the IBM Plex Sans font with the desired weight
 const ibm_plex_sans = IBM_Plex_Sans({
@@ -74,12 +75,10 @@ export function SecondPage() {
                 Learn More
               </Link>
             </div>
-            <Image
-              src="/placeholder.svg"
-              width={550}
-              height={310}
-              alt="Hero"
-              className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+            <OurJourney
+              width={300}
+              height={300}
+              className="mx-auto md:w-full ml-32"
             />
           </div>
         </div>
@@ -105,8 +104,8 @@ export function SecondPage() {
                 <Card className="p-4 max-w-xs w-full">
                   <Image
                     src={milestone.image}
-                    width={550}
-                    height={310}
+                    width={700}
+                    height={1000}
                     alt={milestone.title}
                     className="mx-auto aspect-video overflow-hidden rounded-t-xl object-cover object-center"
                   />

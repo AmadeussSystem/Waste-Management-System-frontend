@@ -203,7 +203,11 @@ export function LandingPage() {
                 </Link>
               </div>
             </div>
-            <MySvg width={300} height={300} className="mx-auto md:w-full" />
+            <MySvg
+              width={300}
+              height={300}
+              className="mx-auto md:w-full ml-24"
+            />
           </div>
         </div>
       </section>
