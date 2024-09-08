@@ -1,8 +1,15 @@
+"use client";
 import { IBM_Plex_Sans } from "next/font/google";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
-import Image from "next/image";
 import OurJourney from "../../public/OurJourneyv2.svg";
+import Lottie from "react-lottie-player"; // Import Lottie component
+import lottieData1 from "../../public/Business Salesman.json"; // Path to your first Lottie JSON
+import lottieData2 from "../../public/Business Team.json"; // Path to your second Lottie JSON
+import lottieData3 from "../../public/Customer review.json"; // Path to your third Lottie JSON
+import lottieData4 from "../../public/Growth Analysis.json"; // Path to your fourth Lottie JSON
+import lottieData5 from "../../public/Female Investors.json"; // Path to your fifth Lottie JSON
+import lottieData6 from "../../public/Woman Shopping Online.json"; // Path to your sixth Lottie JSON
 
 // Import the IBM Plex Sans font with the desired weight
 const ibm_plex_sans = IBM_Plex_Sans({
@@ -14,40 +21,40 @@ const ibm_plex_sans = IBM_Plex_Sans({
 // Sample milestones data for rendering cards
 const milestones = [
   {
-    title: "Founding",
+    title: "Our Beginning",
     description:
-      "Our company was founded in 2015 with a mission to revolutionize the way businesses approach technology.",
-    image: "/placeholder.svg",
+      "Founded in 2023, we launched with a mission to revolutionize waste management for a cleaner, more sustainable future.",
+    lottie: lottieData1, // Lottie animation for this milestone
   },
   {
-    title: "Sustainable Design",
+    title: "Eco-Inspired Vision",
     description:
-      "We are inspired by the principles of sustainable design, which guide our product development and operations.",
-    image: "/placeholder.svg",
+      "From day one, we’ve been driven by the principles of eco-friendly innovation, focusing on reducing waste and promoting sustainable practices.",
+    lottie: lottieData6, // Lottie animation for this milestone
   },
   {
-    title: "Global Expansion",
+    title: "Early Collaborations",
     description:
-      "In 2020, we expanded our reach to serve customers across the globe, bringing our innovative solutions to new markets.",
-    image: "/placeholder.svg",
+      "Partnering with local communities and businesses, we’ve helped lay the groundwork for smarter waste management solutions right from the start.",
+    lottie: lottieData3, // Lottie animation for this milestone
   },
   {
-    title: "Customer-Centricity",
+    title: "Customer-Driven Growth",
     description:
-      "Our unwavering focus on customer satisfaction has been a driving force behind our success and growth.",
-    image: "/placeholder.svg",
+      "Our commitment to providing personalized, reliable waste services has quickly gained the trust of our early clients, fueling our rapid growth.",
+    lottie: lottieData5, // Lottie animation for this milestone
   },
   {
-    title: "Technological Innovation",
+    title: "Innovation in Action",
     description:
-      "Our commitment to innovation has led us to develop cutting-edge technologies that empower our clients to achieve their goals.",
-    image: "/placeholder.svg",
+      "As a startup, we continuously explore new technologies and approaches, ensuring we stay at the forefront of waste management solutions.",
+    lottie: lottieData4, // Lottie animation for this milestone
   },
   {
-    title: "Collaborative Culture",
+    title: "A Shared Vision for the Future",
     description:
-      "Our diverse and talented team works together to create solutions that make a real difference for our clients.",
-    image: "/placeholder.svg",
+      "We believe collaboration is key, and together with our partners, we’re creating a sustainable future for waste management.",
+    lottie: lottieData2, // Lottie animation for this milestone
   },
 ];
 
@@ -64,8 +71,14 @@ export function SecondPage() {
                 Our Journey & Inspiration
               </h1>
               <p className="max-w-[600px] mx-auto text-gray-700 text-base sm:text-lg md:text-xl lg:text-xl">
-                Discover the story behind our company and the inspirations that
-                drive us forward.
+                In a world facing growing environmental challenges, a team of
+                passionate innovators set out to transform the waste management
+                industry with sustainable solutions. With Avrutti, we are
+                bridging the gap between waste producers—whether households,
+                businesses, or industries—and eco-conscious waste recyclers and
+                disposal experts. Join us on this mission to create a cleaner,
+                greener future. Let’s manage waste responsibly and build a
+                sustainable tomorrow for everyone!
               </p>
               <Link
                 href="#"
@@ -89,7 +102,7 @@ export function SecondPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center space-y-4">
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-tighter text-black">
-              Milestones & Inspirations
+              Key Milestones in Our Journey
             </h2>
             <p className="max-w-[700px] mx-auto text-gray-700 text-base sm:text-lg md:text-xl">
               Explore the key moments and inspirations that have shaped our
@@ -102,12 +115,11 @@ export function SecondPage() {
             {milestones.map((milestone, index) => (
               <div key={index} className="flex justify-center">
                 <Card className="p-4 max-w-xs w-full">
-                  <Image
-                    src={milestone.image}
-                    width={700}
-                    height={1000}
-                    alt={milestone.title}
-                    className="mx-auto aspect-video overflow-hidden rounded-t-xl object-cover object-center"
+                  <Lottie
+                    animationData={milestone.lottie} // Use the Lottie animation for this milestone
+                    loop // Loop the animation
+                    play // Play the animation
+                    style={{ width: "100%", height: "auto" }} // Adjust style as needed
                   />
                   <CardContent className="p-4 space-y-2 text-center">
                     <h3 className="text-lg sm:text-xl font-bold text-black">

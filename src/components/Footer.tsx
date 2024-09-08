@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
               <rect x="14" y="11" width="7" height="12"></rect>
             </svg>
             <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-              Company
+              AVRUTTI
             </span>
           </a>
           <div className="mt-6 lg:max-w-sm">
