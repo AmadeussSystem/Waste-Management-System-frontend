@@ -89,9 +89,9 @@ export function SecondPage() {
               </Link>
             </div>
             <OurJourney
-              width={300}
-              height={300}
-              className="mx-auto md:w-full ml-32"
+              width="100%" // Set width to 100% for responsiveness
+              height="auto" // Set height to auto to maintain aspect ratio
+              className="mx-auto md:w-full"
             />
           </div>
         </div>
