@@ -163,14 +163,14 @@ export function LandingPage() {
         </div>
       </header>
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-[#84D25B] to-[#4CAF50]">
-        <div className="container px-4 md:px-6">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl text-white">
                   Sustainable Waste Management Solutions
                 </h1>
-                <p className="max-w-[600px] text-white md:text-2xl">
+                <p className="max-w-[600px] text-white md:text-2xl overflow-x-auto">
                   <Typewriter
                     words={[
                       "Reliable waste collection.",
@@ -204,8 +204,8 @@ export function LandingPage() {
               </div>
             </div>
             <MySvg
-              width={300}
-              height={300}
+              width="100%" // Set width to 100% to make it responsive
+              height="auto" // Set height to auto to maintain aspect ratio
               className="mx-auto md:w-full ml-24"
             />
           </div>
@@ -240,7 +240,7 @@ const TrashIcon: React.FC<IconProps> = (props) => (
     {...props}
   >
     <path
-      d="M3 6h18M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6m5 0V4a2 2 0 012-2h2a2 2 0 012 2v2M10 11v6m4-6v6"
+      d="M3 6h18M9 6V4a2 2 0 012-2h4a2 2 0 012 2v2m-4 0v14a1 1 0 01-1 1H10a1 1 0 01-1-1V6m5 0V4"
       stroke="currentColor"
       strokeWidth={2}
       strokeLinecap="round"
