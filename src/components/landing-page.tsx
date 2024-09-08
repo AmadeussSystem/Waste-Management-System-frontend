@@ -69,12 +69,13 @@ export function LandingPage() {
             <NavigationMenuLink asChild>
               <Link
                 href="#"
-                className="group inline-flex h-9 items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-accent"
+                className="group inline-flex h-9 items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-black"
                 prefetch={false}
               >
                 Home
               </Link>
             </NavigationMenuLink>
+
             <NavigationMenuItem>
               <NavigationMenuTrigger>Services</NavigationMenuTrigger>
               <NavigationMenuContent>
@@ -127,7 +128,7 @@ export function LandingPage() {
             <NavigationMenuLink asChild>
               <Link
                 href="#"
-                className="group inline-flex h-9 items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-accent"
+                className="group inline-flex h-9 items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-black"
                 prefetch={false}
               >
                 About
@@ -136,7 +137,7 @@ export function LandingPage() {
             <NavigationMenuLink asChild>
               <Link
                 href="#"
-                className="group inline-flex h-9 items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-accent"
+                className="group inline-flex h-9 items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-black"
                 prefetch={false}
               >
                 Contact
