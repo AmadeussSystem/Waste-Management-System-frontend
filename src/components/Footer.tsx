@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <div className="bg-gradient-to-r from-[#84D25B] to-[#4CAF50] px-4 pt-16 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    <div className="bg-gradient-to-r from-[#84D25B] to-[#4CAF50] px-4 pt-16 w-full">
       <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
         <div className="sm:col-span-2">
           <a
