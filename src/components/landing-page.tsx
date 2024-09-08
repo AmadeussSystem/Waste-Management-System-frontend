@@ -203,11 +203,13 @@ export function LandingPage() {
                 </Link>
               </div>
             </div>
-            <MySvg
-              width="100%" // Set width to 100% to make it responsive
-              height="auto" // Set height to auto to maintain aspect ratio
-              className="mx-auto md:w-full ml-24"
-            />
+            <div className="flex justify-center items-center overflow-hidden">
+              <MySvg
+                width="100%" // Set width to 100% to make it responsive
+                height="auto" // Set height to auto to maintain aspect ratio
+                className="max-w-full h-auto" // Ensure it does not exceed the width of the parent
+              />
+            </div>
           </div>
         </div>
       </section>
