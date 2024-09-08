@@ -4,12 +4,12 @@ import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import OurJourney from "../../public/OurJourneyv2.svg";
 import Lottie from "react-lottie-player"; // Import Lottie component
-import lottieData1 from "../../public/Business Salesman.json"; // Path to your first Lottie JSON
-import lottieData2 from "../../public/Business Team.json"; // Path to your second Lottie JSON
-import lottieData3 from "../../public/Customer review.json"; // Path to your third Lottie JSON
-import lottieData4 from "../../public/Growth Analysis.json"; // Path to your fourth Lottie JSON
-import lottieData5 from "../../public/Female Investors.json"; // Path to your fifth Lottie JSON
-import lottieData6 from "../../public/Woman Shopping Online.json"; // Path to your sixth Lottie JSON
+import lottieData1 from "../../public/Business Salesman.json";
+import lottieData2 from "../../public/Business Team.json";
+import lottieData3 from "../../public/Customer review.json";
+import lottieData4 from "../../public/Growth Analysis.json";
+import lottieData5 from "../../public/Female Investors.json";
+import lottieData6 from "../../public/Woman Shopping Online.json";
 
 // Import the IBM Plex Sans font with the desired weight
 const ibm_plex_sans = IBM_Plex_Sans({
@@ -24,37 +24,37 @@ const milestones = [
     title: "Our Beginning",
     description:
       "Founded in 2023, we launched with a mission to revolutionize waste management for a cleaner, more sustainable future.",
-    lottie: lottieData1, // Lottie animation for this milestone
+    lottie: lottieData1,
   },
   {
     title: "Eco-Inspired Vision",
     description:
       "From day one, we’ve been driven by the principles of eco-friendly innovation, focusing on reducing waste and promoting sustainable practices.",
-    lottie: lottieData6, // Lottie animation for this milestone
+    lottie: lottieData6,
   },
   {
     title: "Early Collaborations",
     description:
       "Partnering with local communities and businesses, we’ve helped lay the groundwork for smarter waste management solutions right from the start.",
-    lottie: lottieData3, // Lottie animation for this milestone
+    lottie: lottieData3,
   },
   {
     title: "Customer-Driven Growth",
     description:
       "Our commitment to providing personalized, reliable waste services has quickly gained the trust of our early clients, fueling our rapid growth.",
-    lottie: lottieData5, // Lottie animation for this milestone
+    lottie: lottieData5,
   },
   {
     title: "Innovation in Action",
     description:
       "As a startup, we continuously explore new technologies and approaches, ensuring we stay at the forefront of waste management solutions.",
-    lottie: lottieData4, // Lottie animation for this milestone
+    lottie: lottieData4,
   },
   {
     title: "A Shared Vision for the Future",
     description:
       "We believe collaboration is key, and together with our partners, we’re creating a sustainable future for waste management.",
-    lottie: lottieData2, // Lottie animation for this milestone
+    lottie: lottieData2,
   },
 ];
 
@@ -116,10 +116,10 @@ export function SecondPage() {
               <div key={index} className="flex justify-center">
                 <Card className="p-4 max-w-xs w-full">
                   <Lottie
-                    animationData={milestone.lottie} // Use the Lottie animation for this milestone
-                    loop // Loop the animation
-                    play // Play the animation
-                    style={{ width: "100%", height: "auto" }} // Adjust style as needed
+                    animationData={milestone.lottie}
+                    loop
+                    play
+                    style={{ width: "100%", height: "auto" }}
                   />
                   <CardContent className="p-4 space-y-2 text-center">
                     <h3 className="text-lg sm:text-xl font-bold text-black">
