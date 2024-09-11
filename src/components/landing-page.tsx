@@ -143,6 +143,17 @@ export function LandingPage() {
                 Contact
               </Link>
             </NavigationMenuLink>
+            
+            <NavigationMenuLink asChild>
+              <Link
+                href="/track-orders"
+                className="group inline-flex h-9 items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-black"
+                prefetch={false}
+              >
+                Orders
+              </Link>
+            </NavigationMenuLink>
+
           </NavigationMenuList>
         </NavigationMenu>
         <div className="ml-auto flex gap-2 hidden lg:flex">
@@ -155,7 +166,7 @@ export function LandingPage() {
           </Link>
           <Link
             href="#"
-            className="inline-flex h-10 items-center justify-center rounded-md bg-secondary px-4 text-sm font-medium text-black transition-colors hover:bg-secondary/90"
+            className="inline-flex h-10 items-center justify-center rounded-md bg-secondary px-4 text-sm text-gray font-medium text-black transition-colors hover:bg-secondary/90"
             prefetch={false}
           >
             Sign Up
