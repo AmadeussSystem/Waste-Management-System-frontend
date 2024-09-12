@@ -143,7 +143,7 @@ export function LandingPage() {
                 Contact
               </Link>
             </NavigationMenuLink>
-            
+
             <NavigationMenuLink asChild>
               <Link
                 href="/track-orders"
@@ -153,7 +153,6 @@ export function LandingPage() {
                 Orders
               </Link>
             </NavigationMenuLink>
-
           </NavigationMenuList>
         </NavigationMenu>
         <div className="ml-auto flex gap-2 hidden lg:flex">

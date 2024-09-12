@@ -1,10 +1,8 @@
-// assemble all the components right here
-"use client";
-import DriverNav from "@/components/DriversMap/DriverMap";
+import { Tracking } from "@/components/Tracking";
+import React from "react";
 
-
-const Orders: React.FC = () => {
-    return <DriverNav />;
+const page = () => {
+  return <Tracking />;
 };
 
-export default Orders;
+export default page;
